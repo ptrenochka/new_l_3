@@ -1,0 +1,69 @@
+/* Основные стили для всего документа */
+body {
+    
+   font-family: 'Georgia', serif; /* Шрифт для текста */
+    font-size: 23px; /* Увеличенный размер шрифта */
+    line-height: 1.6; /* Высота строки для удобства чтения */
+    margin: 120px; /* Отступы вокруг страницы */
+    background-color: #FFFFF0; /* Цвет фона страницы */
+}
+
+/* Стили заголовков */
+h1 {
+    
+   font-family: 'Helvetica Neue', Arial, sans-serif;
+   /* Шрифт для текста */
+    color: #191970; /* Цвет заголовка первого уровня */
+    font-size: 45px; /* размер заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    text-align: center; /* Выравнивание по центру */
+}
+
+h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #483D8B; /* Цвет заголовка второго уровня */
+}
+
+h3 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #8B0000;
+}
+
+p {
+    margin: 10px 0; 
+}
+
+/* Стили для изображений */
+img {
+    max-width: 100%; /* Максимальная ширина изображения - 100% от родителя */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px; 
+}
+
+/* Стили для горизонтальной линии */
+hr {
+    border: 1px solid #DEB887; /* Цвет и стиль линии */
+    margin: 20px 0; /* Отступы сверху и снизу линии */
+}
+
+/* Стили для списков */
+ul, ol {
+    margin: 10px 20px; 
+}
+
+/* Выделение текста */
+mark {
+    background-color: #5F9EA0; 
+    color: white; 
+    padding: 2px 4px; 
+    border-radius: 3px; 
+    font-weight: bold; 
+}
+
+.highlight {
+    background-color: #8FBC8F; 
+    color: black; 
+    border-radius: 3px; 
+    display: inline-block; /* Позволяет задать отступы вокруг элемента */
+    font-weight: bold; 
+}
