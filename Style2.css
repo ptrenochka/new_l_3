@@ -1,27 +1,26 @@
 /* Основные стили для всего документа */
 body {
     
-   font-family: 'Georgia', serif; /* Шрифт для текста */
-    font-size: 23px; /* Увеличенный размер шрифта */
-    line-height: 1.6; /* Высота строки для удобства чтения */
+    font-family: 'Georgia', serif; 
+    font-size: 23px; 
+    line-height: 1.6; 
     margin: 120px; /* Отступы вокруг страницы */
-    background-color: #FFFFF0; /* Цвет фона страницы */
+    background-color: #FFFFF0; 
 }
 
 /* Стили заголовков */
 h1 {
     
-   font-family: 'Helvetica Neue', Arial, sans-serif;
-   /* Шрифт для текста */
-    color: #191970; /* Цвет заголовка первого уровня */
-    font-size: 45px; /* размер заголовка */
-    font-weight: bold; /* Жирный шрифт */
-    text-align: center; /* Выравнивание по центру */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #191970; 
+    font-size: 45px; 
+    font-weight: bold; 
+    text-align: center; 
 }
 
 h2 {
     font-family: 'Arial Narrow', Arial, sans-serif;
-    color: #483D8B; /* Цвет заголовка второго уровня */
+    color: #483D8B; 
 }
 
 h3 {
@@ -30,6 +29,7 @@ h3 {
 }
 
 p {
+    text-align: justify;
     margin: 10px 0; 
 }
 
