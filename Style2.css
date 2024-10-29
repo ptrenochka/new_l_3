@@ -3,84 +3,111 @@ body {
     font-family: 'Georgia', serif;
     font-size: 23px;
     line-height: 1.6;
-    margin: 120px; /* Отступы вокруг страницы */
-    background-color: #FFFFF0;
+    margin: 30px 135px; /* Отступы вокруг страницы */
+    background-color: #C8D9A6;
 }
 
 /* Стили заголовков */
 h1 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #191970;
-    font-size: 45px;
+    color: #192C57;
+    font-size: 55px;
     font-weight: bold;
     text-align: center;
 }
 
 h2 {
     font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
     color: #483D8B;
 }
 
 p {
     text-align: justify;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 img {
-    max-width: 100%; 
-    height: auto; 
     border-radius: 8px; 
-    margin: 20px 10px;
+    margin: 20px 20px;
 }
 
-.profile {
-    display: flex;
-    align-items: flex-start;
+/* Стили для изображений в разделах хобби */
+/* Стили для контейнера хобби */
+.hobby-container {
+    display: flex; /* элементs в ряд */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; 
+    background-color: #192C57;
+    gap: 10px; 
 }
 
-.profile img {
-    margin-right: 15px;
+.hobby-container ul {
+    margin: 0; 
+    color: aliceblue;
+    padding: 0; 
 }
 
-.text {
-    flex: 1;
-}
-
-
-/* Стили для горизонтальной линии */
-hr {
-    border: 1px solid #DEB887; /* Цвет и стиль линии */
-    margin: 20px 0; /* Отступы сверху и снизу линии */
+/* Стили для изображений в разделах хобби */
+.hobby-image {
+    max-width: 350px; 
+    height: auto; 
+    margin-left: 10px; /* отступ слева от изображения */
 }
 
 /* Стили для списков */
 ul, ol {
     margin: 10px 20px;
+    padding: 0; /* Убираем отступы слева у списка */
 }
 
-/* Стили для изображений */
+/* Стили для фотографий друзей */
 .friend {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Центрируем фотографии */
 }
 
 .photo {
     width: 45%; 
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px; /* Отступы вокруг фотографий */
 }
 
 .photo img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ширина фотографии 100% от родительского контейнера */
+    height: auto; /* Автоматически сохраняем пропорции */
     border-radius: 8px;
 }
 
-.photo p {
-    margin: 10px 0;
+.trav {
+    display: grid; /* Используем grid для размещения фотографий */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки */
+    gap: 10px; /* Отступы между фотографиями */
+    margin-top: 0; /* Отступ сверху */
 }
 
+.photo1 {
+    overflow: hidden; /* Скрываем лишние части, если они выходят за границы */
+    border-radius: 8px; /* Закругление углов (по желанию) */
+}
+
+.photo1 img {
+    width: 100%; /* Ширина фотографии 100% от родительского контейнера */
+    height: auto; /* Автоматически сохраняем пропорции */
+    max-height: 300px; /* Ограничиваем максимальную высоту */
+    object-fit: cover; /* Заполнение изображения по размеру контейнера */
+}
+
+/* Стили для горизонтальной линии */
+hr {
+    border: 1px solid #DEB887; 
+    margin: 20px 0; 
+}
+
+/* Стили для профиля */
 .profile {
     display: flex;
     align-items: flex-start;
@@ -91,6 +118,25 @@ ul, ol {
 }
 
 .text {
-    flex: 1;
+    flex: 1; /* Занимает оставшееся пространство */
 }
 
+/* Стили для меню */
+.menu-container {
+    background-color: #192C57;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
